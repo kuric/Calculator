@@ -13,54 +13,69 @@ html {
 	background-size: cover;
 }
 
-.container {
+.calculator {
 	width: 300px;
 	height: auto;
 	margin: 20px auto;
 	padding: 20px 20px 9px;
-}
-
-.display {
-	width : 280px;
-	height: 60px;
-	padding: 20px 20px 10px;
-	margin : 10px auto;
-	color: red;
-	border: 2px black solid;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	border-radius: 10px;
 }
 
+.display {
+	width : 260px;
+	height: 40px;
+	text-align: right;
+	padding-right: 8px;
+	font-size: 16px;
+	margin : 10px auto;
+	
+	background-color: #F6FFFF;
+	border: 2px #407F7F solid;
+	border-radius: 10px;
+	line-height: 40px;
+}
+
 .keys {
-	width : 280px;
-	height: 230px;
+	width : 260px;
+	height: 220px;
 	margin : 10px auto;
 	padding: 20px 20px 10px 20px;
-	color: blue;
-	border: 2px black solid;
+
+	border: 2px #407F7F solid;
 	border-radius: 10px;
 }
 .keys span {
 	float: left;
 	position: relative;
 	top: 0;
-	width: 49px;
+	width: 34px;
 	height: 36px;
 	
-	background: white;
+	font-size: 14px;
+	background-color: #FAFFFF;
 	border-radius: 3px;
-	border: 1px red solid;
-	margin: 0 10px 11px 0;
+	border: 1px black solid;
+	margin: 4px ;
 	
-	color: #888;
+	color: #51585f;
 	text-align: center;
+	line-height: 36px;
+	float:left;
 }
 
 .keys span.operations {
-	color: blue;
-	margin-right: 10px;
+	
+	margin-right: 4px;
 }
 
-.keys span.enter {
-	background-color: green;
-	margin-right: 10px;
+.keys span.eval {
+	
+	margin-right: 4px;
+	
+}
+#zero {
+	
+	width : 76px;
+	margin-right: 4px;
 }
